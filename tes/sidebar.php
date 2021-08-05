@@ -37,6 +37,14 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
+                    <a href="media.php?p=uangsaku" class="nav-link">
+                        <i class="fas fas fa-users"></i>
+                        <p>
+                            &nbsp; Konfirmasi Uang Saku
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="fas fas fa-users"></i>
                         <p>

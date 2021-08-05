@@ -69,6 +69,21 @@ $daftarulang_konfirmasi = mysqli_num_rows($data_daftarulang);
           <a href="media.php?p=daftarulang" class="small-box-footer">Klik Disini <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
+
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+          <div class="inner">
+            <h3>Rp. 0</h3>
+
+            <p>Saldo Uang Saku</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-person-add"></i>
+          </div>
+          <a href="media.php?p=uangsaku" class="small-box-footer">Klik Disini <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
     </div>
   </div><!-- /.container-fluid -->
 </section>

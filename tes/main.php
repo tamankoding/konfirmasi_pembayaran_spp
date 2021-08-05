@@ -9,8 +9,8 @@
     include 'keuangan/spp_pembayaran.php';
   } elseif ($_GET['p'] == 'daftarulang') {
     include 'keuangan/bayar_du.php';
-  } elseif ($_GET['p'] == 'sholat_offline') {
-    include 'sholat_offline.php';
+  } elseif ($_GET['p'] == 'uangsaku') {
+    include 'keuangan/uangsaku.php';
   } else {
     include 'home.php';
   }
