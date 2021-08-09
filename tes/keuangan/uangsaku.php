@@ -141,6 +141,29 @@ $santri = query("SELECT * FROM spp_santri WHERE nama='$namasantri' ORDER BY id D
                                         <th width="35%">Keterangan</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <?php  
+                                        $saku = mysqli_query($koneksi, "SELECT * FROM uang_saku");
+                                        $no = 1;
+                                        while ($ambil = mysqli_fetch_array($saku)) {
+                                            ?>
+                                            <tr>
+                                                <td><?= $no; ?></td>
+                                                <td><?= $ambil['tanggal']; ?></td>
+                                                <td><?= $ambil['nominal']; ?></td>
+                                                <td><?= $ambil['kredit']; ?></td>
+                                                <td><?= $saldo = $ambil['nominal']; - $ambil['kredit']; ?></td>
+                                                <td><?= $ambil['keterangan']; ?></td>
+                                            </tr>
+
+                                    <?php
+                                        $no++;
+                                        }
+
+
+
+                                    ?>
+                                </tbody>
                             </table>
                         </div>
                     </div>
